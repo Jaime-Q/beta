@@ -22,9 +22,15 @@ def calc(x, y, z):
         if y == 0:
             return "No es posible dividir entre cero"
         ans = x / y
+        return ans
+    elif (z == '5'):
+        if y == 0:
+            Div = "No es posible dividir entre cero"
+        else:
+            Div = x / y
+        return (f"Add: ({x + y}) - Sub: ({x - y}) - Mult: ({x * y}) - Div: ({Div})")
     
-    return "Opcion no valida, Seleccione del 1 al 4."   
-    return ans
+    return "Opcion no valida, Seleccione del 1 al 5."
 
 def calc2(x, y, z):
     if (z == '1'):
@@ -41,7 +47,14 @@ def calc2(x, y, z):
                         return " No es posible dividir entre cero"
                     ans = x / y
                 else:
-                    return "Opcion no valida, Seleccione del 1 al 4."
+                    if (z == '5'):
+                        if y == 0:
+                            Div = "No es posible dividir entre cero"
+                        else:
+                            Div = x / y
+                        return (f"Add: ({x + y}) - Sub: ({x - y}) - Mult: ({x * y}) - Div: ({Div})")
+    
+                    return "Opcion no valida, Seleccione del 1 al 5."
                         
     return ans
 
@@ -56,8 +69,14 @@ def calc3(x, y, z):
         if y == 0:
             return "No es posible dividir entre cero"
         ans = x / y 
+    elif (z == '5'):
+        if y == 0:
+            Div = "No es posible dividir entre cero"
+        else:
+            Div = x / y
+        return (f"Add: ({x + y}) - Sub: ({x - y}) - Mult: ({x * y}) - Div: ({Div})")
     else:
-        return "Opcion no valida, Seleccione del 1 al 4."
+        return "Opcion no valida, Seleccione del 1 al 5."
     
     return ans
 
@@ -70,14 +89,15 @@ print("[1]. Add")
 print("[2]. Sub")
 print("[3]. Mult")
 print("[4]. Div")
+print("[5]. All Operations")
 opt = input("::. Press any option: ")
 
 
 res = calc(num1, num2, opt)
-print(f"The result with f1 is: {res}")
+print(f"The result with f1 is ==> {res}")
 
 res2 = calc2(num1, num2, opt)
-print(f"The result with f2 is: {res2}")
+print(f"The result with f2 is ==> {res2}")
 
 res3 = calc3(num1, num2, opt)
-print(f"The result with f3 is: {res3}")
+print(f"The result with f3 is ==> {res3}")
