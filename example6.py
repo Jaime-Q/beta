@@ -3,7 +3,6 @@ from random import randint, uniform
 
 def ged_dices():
     os.system('clear')
-    print("::: WELCOM TO MY PARCHIS :::")
     
     player_name = input("Player name: ")
 
