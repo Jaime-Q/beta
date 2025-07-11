@@ -13,8 +13,8 @@ def ged_dices():
     print(f"Dice 2: {dice2}")
 
     if dice1 % 2 == 0 and dice2 % 2 == 0:
-        print("::  YOU WIND  ::")
+        print(":: 🎉 YOU WIND 🎉 ::")
     else:
-        print(":: YOU LOSE ::")
+        print(":: 😢 YOU LOSE 😢 ::")
 
 ged_dices()
